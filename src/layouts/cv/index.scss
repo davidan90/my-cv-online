@@ -1,1 +1,6 @@
-// TODO
+#cv-layout {
+    display: none;
+    &:target {
+        display: block;
+    }
+}

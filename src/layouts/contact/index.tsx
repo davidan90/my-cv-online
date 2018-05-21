@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './index.scss';
 
-export default class ContactLayout extends React.Component<{}, {}> {
+export class ContactLayout extends React.Component<{}, {}> {
     render() {
         return (
             <div id='contact-layout' className='layout'>

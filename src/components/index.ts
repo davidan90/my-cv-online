@@ -1,3 +1,1 @@
-import HelloWorld from './hello-world/index';
-
-export { HelloWorld };
+export * from './tetris-navigation';

@@ -1,0 +1,21 @@
+html,
+body,
+#dan-app {
+    height: 100vh;
+    header,
+    footer {
+        display: inline-block;
+    }
+}
+
+html {
+    padding: 1em;
+}
+
+body {
+    margin: 0;
+    .dan-app-container {
+        width: 100vh;
+        height: 100vh;
+    }
+}

@@ -1,1 +1,6 @@
-// TODO
+#home-layout {
+    display: none;
+    &:target {
+        display: block;
+    }
+}

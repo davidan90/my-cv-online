@@ -1,1 +1,6 @@
-// TODO
+#contact-layout {
+    display: none;
+    &:target {
+        display: block;
+    }
+}
