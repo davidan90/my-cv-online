@@ -1,4 +1,5 @@
 #skills-layout {
+    min-height: 100vh;
     display: none;
     &:target {
         display: block;

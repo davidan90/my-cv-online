@@ -52,6 +52,11 @@ module.exports = {
                     'sass-loader'
                 ],
                 exclude: /node_modules/
+            },
+
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file-loader?name=src/assets/fonts/**/[name].[ext]'
             }
 
         ]

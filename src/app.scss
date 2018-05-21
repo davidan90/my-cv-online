@@ -1,21 +1,17 @@
-html,
-body,
+@font-face {
+    font-family: Raleway;
+    src: url("./assets/fonts/Raleway/Raleway-Regular.ttf"),
+        url("./assets/fonts/Raleway/Raleway-Black.ttf"),
+        url('./assets/fonts/Raleway/Raleway-Bold.ttf'),
+        url('./assets/fonts/Raleway/Raleway-Light.ttf'),
+        url('./assets/fonts/Raleway/Raleway-Italic.ttf');
+}
+
 #dan-app {
-    height: 100vh;
+    font-family: 'Raleway', sans-serif;
+	color: #666;
     header,
     footer {
         display: inline-block;
-    }
-}
-
-html {
-    padding: 1em;
-}
-
-body {
-    margin: 0;
-    .dan-app-container {
-        width: 100vh;
-        height: 100vh;
     }
 }
