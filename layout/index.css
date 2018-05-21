@@ -21,7 +21,7 @@ body {
 }
 
 .panel {
-    background: hsl(35, 4%, 88%, 0.5);
+    background: hsla(35, 4%, 88%, 0.5);
     width: 1rem;
     height: 1rem;
 }
