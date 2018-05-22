@@ -1,7 +1,18 @@
 #contact-layout {
-    min-height: 100vh;
     display: none;
     &:target {
         display: block;
+    }
+
+    .container {
+        display: grid;
+        min-height: 100vh;
+        grid-template-columns: 1fr 1fr;
+
+        .contact {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
