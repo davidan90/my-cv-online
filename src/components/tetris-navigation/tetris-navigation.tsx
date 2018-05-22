@@ -1,10 +1,6 @@
 import * as React from 'react';
-import { TetrisLink } from './interface';
-import './index.scss';
-
-export interface TetrisNavigationProps {
-    links: Array<TetrisLink>;
-}
+import { TetrisLink, TetrisNavigationProps } from './interfaces';
+import './tetris-navigation.scss';
 
 export const TetrisNavigationComponent = ({ links }: TetrisNavigationProps) => (
     <nav className='dan-navigation'>

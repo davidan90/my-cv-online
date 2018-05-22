@@ -1,2 +1,2 @@
-export * from './app-header';
+export * from './interfaces';
 export * from './tetris-navigation';
