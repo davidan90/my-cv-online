@@ -4,10 +4,17 @@ import { TetrisNavigation } from './components';
 
 import './app.scss';
 
+const links = [
+    { title: 'Contacto', styleClass: 'contact', href: '#contact-layout' },
+    { title: 'Inicio', styleClass: 'home', href: '#home-layout' },
+    { title: 'Tecnologias', styleClass: 'skills', href: '#skills-layout' },
+    { title: 'Curriculum', styleClass: 'cv', href: '#cv-layout' }
+];
+
 export const App = () => (
     <div className='dan-app-container'>
         <header>
-            <TetrisNavigation />
+            <TetrisNavigation {...{links}}/>
         </header>
         <ContactLayout />
         <HomeLayout />
