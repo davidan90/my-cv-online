@@ -4,9 +4,7 @@ import './social-media-card.scss';
 
 export const SocialMediaComponent = ({ logo, href, userName }: SocialMediaProps) => (
     <div className='contact'>
-        <a className={`logo-container ${logo}`} href={href} target='_blank'>
-            <div className={`social-logo ${logo}`}></div>
-        </a>
+        <a className={`logo-container ${logo}`} href={href} target='_blank'></a>
         <span>
             <a href={href} target='_blank'>{`@${userName}`}</a>
         </span>

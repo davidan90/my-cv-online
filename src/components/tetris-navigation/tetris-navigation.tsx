@@ -7,7 +7,7 @@ export const TetrisNavigationComponent = ({ links }: TetrisNavigationProps) => (
         <ol>
             {
                 links.map((link: TetrisLink, index: number) => (
-                    <li key={`tetris-navigation-${index}`} className={`panel ${link.styleClass}`}>
+                    <li key={`tetris-navigation-${index}`} className={`panel panel-${link.styleClass}`}>
                         <a href={link.href} title={link.title}></a>
                     </li>)
                 )
