@@ -27,8 +27,6 @@ export class TetrisNavigation extends React.Component<TetrisNavigationProps, {}>
 
     render() {
         const { links } = this.props;
-        return (
-            <TetrisNavigationComponent {...{links}} />
-        );
+        return <TetrisNavigationComponent {...{links}} />;
     }
 }
