@@ -1,2 +1,8 @@
-// TODO
-$font-stack:    Helvetica, sans-serif;
+@font-face {
+    font-family: Raleway;
+    src: url("./assets/fonts/Raleway/Raleway-Regular.ttf"),
+        url("./assets/fonts/Raleway/Raleway-Black.ttf"),
+        url('./assets/fonts/Raleway/Raleway-Bold.ttf'),
+        url('./assets/fonts/Raleway/Raleway-Light.ttf'),
+        url('./assets/fonts/Raleway/Raleway-Italic.ttf');
+}
