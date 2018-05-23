@@ -3,6 +3,7 @@
     a.arrow {
         font-size: 2.5rem;
         font-weight: bold;
+        display: block;
         color: hsla(35, 4%, 88%, 0.8);
 
         &.arrow-left:before {
@@ -15,15 +16,14 @@
 
         &.arrow-up:before {
             display: block;
-            transform: rotate(90deg);
             content: '<';
-        }
-
-        &.arrow-down {
-            display: block;
             transform: rotate(90deg);
-            content: '>';
         }
 
+        &.arrow-down:before {
+            display: block;
+            content: '<';
+            transform: rotate(-90deg);
+        }
     }
 }

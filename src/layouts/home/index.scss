@@ -1,7 +1,6 @@
 @import "../../assets/styles/variables/responsive";
 
 #home-layout {
-    min-height: 100vh;
     display: none;
     &:target {
         display: block;
@@ -12,6 +11,35 @@
         align-items: center;
         justify-content: center;
         min-height: 100vh;
+
+        .arrow-container {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            &.skills-arrow-right,
+            &.contact-arrow-left {
+                top: 4rem;
+                min-height: 90vh;
+                width: 15vw;
+            }
+    
+            &.skills-arrow-right {
+                right: 0;
+            }
+    
+            &.contact-arrow-left {
+                left: 0;
+            }
+    
+            &.cv-arrow-down {
+                bottom: 0;
+                left: 0;
+                height: 15vh;
+                width: 100vw;
+            }
+        }
     }
 
     @media #{$screen-m}, #{$screen-l} {
