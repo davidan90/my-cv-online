@@ -1,1 +1,1 @@
-export * from './social-media-props';
+export * from './social-media-props.interface';

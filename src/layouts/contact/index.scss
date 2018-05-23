@@ -6,7 +6,7 @@
         display: block;
     }
 
-    .container {
+    .contact-container {
         display: grid;
         min-height: 100vh;
         grid-template-columns: 1fr 1fr;
@@ -17,5 +17,16 @@
             align-items: center;
             justify-content: center;   
         }
+    }
+
+    .contact-arrow-left-container {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 15vw;
     }
 }

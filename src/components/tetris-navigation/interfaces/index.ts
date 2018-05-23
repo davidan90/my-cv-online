@@ -1,2 +1,2 @@
-export * from './link.interface';
-export * from './tetris-navigation-props';
+export * from './tetris-link.interface';
+export * from './tetris-navigation-props.interface';
