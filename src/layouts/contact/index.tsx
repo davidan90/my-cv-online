@@ -28,7 +28,7 @@ export class ContactLayout extends React.Component<{}, {}> {
         return (
             <div id='contact-layout' className='layout'>
                 {this.renderSocialMediaCards(socialMediaCards)}
-                <div className='contact-arrow-left-container'>
+                <div className='contact-arrow-right-container'>
                     <ArrowNavigation {...rightArrowProps} />
                 </div>
             </div>

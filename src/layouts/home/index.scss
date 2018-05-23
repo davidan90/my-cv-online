@@ -1,7 +1,20 @@
+@import "../../assets/styles/variables/responsive";
+
 #home-layout {
     min-height: 100vh;
     display: none;
     &:target {
         display: block;
+    }
+
+    .home-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    @media #{$screen-m}, #{$screen-l} {
+        padding: 0 3rem;
     }
 }

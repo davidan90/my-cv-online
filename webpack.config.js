@@ -60,7 +60,7 @@ module.exports = {
             },
 
             {
-                test: /\.(png|gif)$/,
+                test: /\.(png|gif|jpg)$/,
                 loader: 'file-loader?name=src/assets/images/**/[name].[ext]'
             }
 
