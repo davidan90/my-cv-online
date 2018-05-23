@@ -1,0 +1,29 @@
+.arrow {
+    
+    a {
+        font-size: 2.5rem;
+        font-weight: bold;
+        color: hsla(35, 4%, 88%, 0.8);
+
+        &.arrow-left:before {
+            content: '<'
+        }
+
+        &.arrow-right:before {
+            content: '>'
+        }
+
+        &.arrow-up:before {
+            display: block;
+            transform: rotate(90deg);
+            content: '<';
+        }
+
+        &.arrow-down {
+            display: block;
+            transform: rotate(90deg);
+            content: '>';
+        }
+
+    }
+}
