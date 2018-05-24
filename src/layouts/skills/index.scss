@@ -4,4 +4,26 @@
     &:target {
         display: block;
     }
+
+    .skills-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+
+        .arrow-container {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.home-arrow-left {
+                top: 4rem;
+                left: 0;
+                min-height: 90vh;
+                width: 15vw;
+            }
+                
+        }
+    }
 }

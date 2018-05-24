@@ -4,4 +4,26 @@
     &:target {
         display: block;
     }
+
+    .cv-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+
+        .arrow-container {
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &.home-arrow-up {
+                top: 4rem;
+                left: 0;
+                min-height: 15vh;
+                width: 100vw;
+            }
+                
+        }
+    }
 }
