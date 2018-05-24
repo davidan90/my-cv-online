@@ -26,12 +26,12 @@ export class ContactLayout extends React.Component<{}, {}> {
         ];
 
         return (
-            <div id='contact' className='layout'>
+            <section id='contact' className='layout'>
                 {this.renderSocialMediaCards(socialMediaCards)}
                 <div className='contact-arrow-right-container'>
                     <ArrowNavigation {...rightArrowProps} />
                 </div>
-            </div>
+            </section>
         );
     }
 }

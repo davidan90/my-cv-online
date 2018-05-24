@@ -9,7 +9,7 @@ export class HomeLayout extends React.Component<{}, {}> {
         const downArrowProps: ArrowNavigationProps = { link: { href: '#cv', direction: 'down', title: 'Curriculum' } };
 
         return (
-            <div id='home' className='layout'>
+            <section id='home' className='layout'>
                 <div className='home-container'>
                     <div className='arrow-container skills-arrow-right'>
                         <ArrowNavigation {...rightArrowProps} />
@@ -22,7 +22,7 @@ export class HomeLayout extends React.Component<{}, {}> {
                         <ArrowNavigation {...downArrowProps} />
                     </div>
                 </div>
-            </div>
+            </section>
         );
     }
 }
