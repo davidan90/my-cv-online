@@ -17,7 +17,9 @@ export class CvSection extends React.Component<CvSectionProps, {}> {
             (
                 <div className='cv-section'>
                     <h3>{title}</h3>
-                    {this.props.children}
+                    <div className='cv-section-content'>
+                        {this.props.children}
+                    </div>
                 </div>
             ) : null;
     }

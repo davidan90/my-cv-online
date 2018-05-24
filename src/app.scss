@@ -3,6 +3,7 @@
 
 body {
     margin: 0;
+    overflow: auto;
     h1,h2,h3,h4,h5,h6 {
         display: inline-block;
     }
@@ -16,7 +17,7 @@ body {
         }
 
         .dan-app-container {
-            background-color: $blue-hight-transparent;
+            background-color: $blue-low;
         }
     }
 }
