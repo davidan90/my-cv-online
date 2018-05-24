@@ -19,14 +19,14 @@ export class ContactLayout extends React.Component<{}, {}> {
     )
 
     render() {
-        const rightArrowProps: ArrowNavigationProps = { link: { href: '#home-layout', direction: 'right', title: 'Contacto' } };
+        const rightArrowProps: ArrowNavigationProps = { link: { href: '#home', direction: 'right', title: 'Contacto' } };
         const socialMediaCards: Array<SocialMediaProps> = [
             { logo: 'twitter', href: 'https://twitter.com/whiletrueloop', userName: 'whiletrueloop' },
             { logo: 'github', href: 'https://github.com/davidan90', userName: 'davidan90' }
         ];
 
         return (
-            <div id='contact-layout' className='layout'>
+            <div id='contact' className='layout'>
                 {this.renderSocialMediaCards(socialMediaCards)}
                 <div className='contact-arrow-right-container'>
                     <ArrowNavigation {...rightArrowProps} />

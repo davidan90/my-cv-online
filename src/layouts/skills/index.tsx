@@ -4,10 +4,10 @@ import './index.scss';
 
 export class SkillsLayout extends React.Component<{}, {}> {
     render() {
-        const leftArrowProps: ArrowNavigationProps = { link: { href: '#home-layout', direction: 'left', title: 'Inicio' } };
+        const leftArrowProps: ArrowNavigationProps = { link: { href: '#home', direction: 'left', title: 'Inicio' } };
 
         return (
-            <div id='skills-layout' className='layout'>
+            <div id='skills' className='layout'>
                 <div className='skills-container'>
                     <div className='arrow-container home-arrow-left'>
                         <ArrowNavigation {...leftArrowProps} />
