@@ -13,10 +13,54 @@
         flex-direction: column;
         min-height: 25vh;
         
-        &.contact {
+        &.cv-contact {
             .cv-contact-item {
                 display: flex;
                 flex-direction: column;
+            }
+
+            span {
+                margin: 1rem;
+            }
+        }
+
+        &.cv-studies {
+            .cv-studies-item {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+
+                .cv-studies-item-title {
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+                .cv-studies-item-date {
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        &.cv-experience {
+            .cv-experience-item {
+                display: flex;
+                flex-direction: column;
+                margin: 1rem;
+
+                .cv-experience-item-title {
+                    display:flex;
+                    justify-content: space-between;
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                    
+                    span {
+                        &:last-child {
+                            font-size: .8rem;
+                        }
+                    }
+                }
+                .cv-experience-item-description {
+                    font-size: .9rem;
+                }
             }
         }
 
