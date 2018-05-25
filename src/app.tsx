@@ -32,7 +32,7 @@ export class App extends React.Component<{}, {start: boolean}> {
                     className={`start-backdrop${start ? ' hide' : ''}`}
                     href='#home'
                     onClick={() => this.setState({start: true})}>
-                    Comenzar
+                    <span>Comenzar</span>
                 </a>
                 {this.renderApp(start)}
             </React.Fragment>

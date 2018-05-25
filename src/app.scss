@@ -1,5 +1,6 @@
 @import "./assets/styles/variables/colors";
 @import "./assets/styles/variables/fonts";
+@import "./assets/styles/variables/animations";
 
 body {
     margin: 0;
@@ -29,6 +30,12 @@ body {
             
             &.hide {
                 display: none;
+            }
+
+            span {
+                animation-duration: 1.5s;
+                animation-name: tada-animation;
+                animation-iteration-count: infinite; 
             }
         }
 
