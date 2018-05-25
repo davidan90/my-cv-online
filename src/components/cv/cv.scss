@@ -1,12 +1,27 @@
 .it-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     max-width: 800px;
     padding-top: 15vh;
 
-    .section-container {
+    h2 {
+        text-align: center;
+    }
 
+    .cv-section-container {
+        display: flex;
+        flex-direction: column;
+        min-height: 25vh;
+        
+        &.contact {
+            .cv-contact-item {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        @media #{'(max-width: 640px)'} {
+            min-height: 0;
+        }
     }
 }
