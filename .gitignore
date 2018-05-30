@@ -63,5 +63,13 @@ typings/
 # lock json
 package-lock.json
 
-#OSX files
+# OSX files
 .DS_Store
+
+# firebase
+.firebaserc
+firebase.json
+firebase-debug.log
+
+# build
+dist
