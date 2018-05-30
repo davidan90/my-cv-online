@@ -6,7 +6,7 @@ export const IndicatorClasses = {
     [Symbol.iterator]: function* gen() {
         let classNameIndex = 0;
         if (this.indicatorValue <= this.max) {
-            const variant = Math.floor(this.max / this.classesNames.length);
+            const variant = (this.max / this.classesNames.length);
             let separator = variant;
             let currentClass = this.classesNames[classNameIndex];
 
@@ -15,9 +15,9 @@ export const IndicatorClasses = {
                     yield 'indicator-default';
                 } else {
                     if (element >= separator) {
-                        currentClass = this.classesNames[classNameIndex];
-                        separator = separator + variant;
                         classNameIndex++;
+                        separator = separator + variant;
+                        currentClass = this.classesNames[classNameIndex];
                     }
                     yield currentClass;
                 }
