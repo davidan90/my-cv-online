@@ -1,1 +1,31 @@
-// TODO
+.indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .indicator-column {
+        width: .5rem;
+        height: 2rem;
+        margin: 2px;
+
+        &.indicator-default {
+            background-color: hsla(35, 4%, 88%, 0.2);
+        }
+
+        &.indicator-0 {
+            background-color: #41A3D8;
+        }
+
+        &.indicator-1 {
+            background-color: #7180AC;
+        }
+
+        &.indicator-2 {
+            background-color: #33658A;
+        }
+
+        &.indicator-3 {
+            background-color: #19223B;
+        }
+    }
+}

@@ -1,8 +1,14 @@
-export const IndicatorClasses = {
+export interface Indicators {
+    classesNames: Array<string>;
+    indicatorValue: number;
+    max: number;
+    [Symbol.iterator]: () => IterableIterator<string>;
+}
+
+export const IndicatorClasses: Indicators = {
     classesNames: ['indicator-0', 'indicator-1', 'indicator-2', 'indicator-3'],
     indicatorValue: 0,
     max: 0,
-
     [Symbol.iterator]: function* gen() {
         let classNameIndex = 0;
         if (this.indicatorValue <= this.max) {

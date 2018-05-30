@@ -1,1 +1,16 @@
-// TODO
+.skill-card-container {
+    margin: 30px;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+
+    h3 {
+        width: 100%;
+        text-align: center;
+    }
+
+    &:hover {
+        background-color: hsla(35, 4%, 88%, .2);
+        border-radius: 3px;
+    }
+}

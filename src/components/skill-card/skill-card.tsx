@@ -15,7 +15,7 @@ export class SkillCard extends React.Component<SkillCardProps, {}> {
     render() {
         return this.props.title ? (
             <div className='skill-card-container'>
-                <h2>titulo</h2>
+                <h3>{this.props.title}</h3>
                 <div className='skill-indicator-container'>
                     {this.props.children}
                 </div>
