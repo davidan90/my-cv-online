@@ -62,7 +62,7 @@ module.exports = {
             },
 
             {
-                test: /\.(png|gif|jpg|jpeg)$/,
+                test: /\.(png|gif|jpg|jpeg|ico)$/,
                 loader: 'file-loader?name=src/assets/images/**/[name].[ext]'
             },
 
@@ -78,7 +78,8 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
 
         new HtmlWebpackPlugin({
-            template: './src/index.html'
+            template: './src/index.html',
+            favicon: './src/assets/images/favicon/favicon.ico'
         }),
         new UglifyWebpackPlugin(),
 
