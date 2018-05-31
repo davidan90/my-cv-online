@@ -14,7 +14,9 @@ export class HomeLayout extends React.Component<{}, {}> {
                     <div className='arrow-container skills-arrow-right'>
                         <ArrowNavigation {...rightArrowProps} />
                     </div>
-                    <ProfileCard />
+                    <div className='profile-card-container'>
+                        <ProfileCard />
+                    </div>
                     <div className='arrow-container contact-arrow-left'>
                         <ArrowNavigation {...leftArrowProps} />
                     </div>

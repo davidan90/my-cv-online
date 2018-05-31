@@ -40,6 +40,13 @@
                 width: 100vw;
             }
         }
+
+        .profile-card-container {
+            padding-top: 7vh;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
     }
 
     @media #{$screen-m}, #{$screen-l} {

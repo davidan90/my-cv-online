@@ -1,7 +1,9 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin');
 const webpack = require('webpack');
+const env = process.env.NODE_ENV
 
 module.exports = {
     entry: './src/index.tsx',
@@ -74,8 +76,14 @@ module.exports = {
     
     plugins: [
         new CleanWebpackPlugin(['dist']),
+
         new HtmlWebpackPlugin({
             template: './src/index.html'
+        }),
+        new UglifyWebpackPlugin(),
+
+        new webpack.DefinePlugin({
+            'process.env.NODE_ENV': JSON.stringify(env)
         })
     ],
 };
