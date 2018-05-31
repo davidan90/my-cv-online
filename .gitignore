@@ -73,3 +73,4 @@ firebase-debug.log
 
 # build
 dist
+./src/assets/docs/pdfs/cv.pdf
