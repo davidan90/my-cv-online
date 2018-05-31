@@ -62,6 +62,11 @@ module.exports = {
             {
                 test: /\.(png|gif|jpg|jpeg)$/,
                 loader: 'file-loader?name=src/assets/images/**/[name].[ext]'
+            },
+
+            {
+                test: /\.pdf$/,
+                loader: 'file-loader?name=src/assets/docs/**/[name].[ext]'
             }
 
         ]

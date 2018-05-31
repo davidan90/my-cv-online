@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { CvSection, CvSectionProps } from '../cv-section';
+import { CvDownload } from '../cv-download';
 import './cv.scss';
 
 export class Cv extends React.Component<{ children?: any }, {}> {
@@ -82,6 +83,7 @@ export class Cv extends React.Component<{ children?: any }, {}> {
             <div className='it-container'>
                 <h2>Currículum</h2>
                 {this.renderSections(sections)}
+                <CvDownload/>
             </div>
         );
     }
