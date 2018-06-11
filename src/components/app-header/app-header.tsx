@@ -1,10 +1,10 @@
 import * as React from 'react';
-import { NavigationContext } from '../../contexts';
+import { NavigationProvider } from '../../providers';
 import { TetrisNavigation, TetrisLink } from '../tetris-navigation';
 import './app-header.scss';
 
 export const AppHeader = () => (
-    <NavigationContext.Consumer>
+    <NavigationProvider.Consumer>
         {
             (links: Array<TetrisLink>) => (
                 <header>
@@ -12,5 +12,5 @@ export const AppHeader = () => (
                 </header>
             )
         }
-    </NavigationContext.Consumer>
+    </NavigationProvider.Consumer>
 );

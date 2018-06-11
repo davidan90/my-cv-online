@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { CvSection, CvSectionProps } from '../cv-section';
 import { CvDownload } from '../cv-download';
+import { I18nSpan } from '../../providers';
 import './cv.scss';
 
 export class Cv extends React.Component<{ children?: any }, {}> {
@@ -20,10 +21,10 @@ export class Cv extends React.Component<{ children?: any }, {}> {
                 children: (
                     <div className='cv-section-container cv-contact'>
                         <div className='cv-contact-item'>
-                            <span className='cv-contact-item-title'><b>Nombre:</b> David Álvarez Navarro </span>
-                            <span className='cv-contact-item-profile'><b>Perfil:</b> Desarrollador web </span>
-                            <span className='cv-contact-item-email'><b>Email:</b> david16an@gmail.com </span>
-                            <span className='cv-contact-item-phone'><b>Teléfono:</b> +34 646719565 </span>
+                            <span className='cv-contact-item-title'><b><I18nSpan text='cv.label.name'/>:</b> David Álvarez Navarro </span>
+                            <span className='cv-contact-item-profile'><b><I18nSpan text='cv.label.profile'/>:</b> Desarrollador web </span>
+                            <span className='cv-contact-item-email'><b><I18nSpan text='cv.label.mail'/>:</b> david16an@gmail.com </span>
+                            <span className='cv-contact-item-phone'><b><I18nSpan text='cv.label.phone'/>:</b> +34 646719565 </span>
                         </div>
                     </div>
                 )
