@@ -1,0 +1,10 @@
+{
+    "cv": {
+        "label": {
+            "name": "Name",
+            "profile": "Profile",
+            "mail": "Email",
+            "phone": "Phone"
+        }
+    }
+}
