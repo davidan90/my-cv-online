@@ -1,10 +1,38 @@
 {
+    "languages": {
+        "en": "Inglés",
+        "es": "Español"
+    },
+    "home": {
+        "profile": "Desarrollador web",
+        "about": "Desarrollador web desde el 2014. Perfil frontend aunque también he trabajado como backend. He trabajado con distintas tecnologías, entre ellas Javascript, Typescript, Angular, React, Java y Python."
+    },
     "cv": {
         "label": {
             "name": "Nombre",
             "profile": "Perfil",
             "mail": "Email",
             "phone": "Teléfono"
+        },
+        "data": {
+            "profile": "Desarrollador web",
+            "dates": {
+                "current": "Actualidad"
+            },
+            "education": {
+                "fp": {
+                    "venue": "IES El Lago",
+                    "name": "Desarrollo de aplicaciones web"
+                },
+                "college": {
+                    "venue": "Universidad Rey Juan Carlos",
+                    "name": "Comunicación Audiovisual"
+                }
+            },
+            "experience": {
+                "front-developer": "Desarrollador front end",
+                "full-developer": "Desarrollador fullstack"
+            }
         }
     }
 }

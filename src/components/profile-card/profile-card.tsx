@@ -1,5 +1,5 @@
 import * as React from 'react';
-
+import { I18nText } from '../../providers';
 import './profile-card.scss';
 
 export class ProfileCard extends React.Component<{}, {}> {
@@ -13,10 +13,10 @@ export class ProfileCard extends React.Component<{}, {}> {
                 <div className='profile-img'></div>
                 <div className='profile-info'>
                     <h1>David Álvarez Navarro</h1>
-                    <h3>Desarrollador web</h3>
+                    <h3><I18nText text='home.profile'/></h3>
                     <div className='profile-description'>
                         <p>
-                            Desarrollador web desde el 2014. Perfil frontend aunque también he trabajado como backend. He trabajado con distintas tecnologías, entre ellas Javascript, Typescript, Angular, React, Java y Python.
+                            <I18nText text='home.about'/>
                         </p>
                     </div>
                 </div>

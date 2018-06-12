@@ -14,17 +14,11 @@ const translate = (data: object, ref: string): string => {
     return result ? result : ref;
 };
 
-export const I18nSpan = ({text}: I18n) => {
+export const I18nText = ({text}: I18n) => {
     return text ? (
         <I18nContext.Consumer>
             {
-                (context: any) => context.data ? (
-                    <span style={{
-                        margin: 0
-                    }}>
-                        {translate(context.data, text)}
-                    </span>
-                ) : null
+                (context: any) => context.data ? translate(context.data, text) : null
             }
         </I18nContext.Consumer>
     ) : null;
