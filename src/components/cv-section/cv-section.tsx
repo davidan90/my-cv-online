@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { CvSectionProps } from './interfaces';
+import { I18nText } from '../../providers/i18n';
 import './cv-section.scss';
 
 export class CvSection extends React.Component<CvSectionProps, {}> {
@@ -16,7 +17,7 @@ export class CvSection extends React.Component<CvSectionProps, {}> {
         return title ?
             (
                 <div className='cv-section'>
-                    <h3>{title}</h3>
+                    <h3><I18nText text={title}/></h3>
                     <div className='cv-section-content'>
                         {this.props.children}
                     </div>

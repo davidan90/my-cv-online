@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { ArrowNavigation, ArrowNavigationProps, SkillCard, Indicator } from '../../components';
+import { I18nText } from '../../providers/i18n';
 import './index.scss';
 
 export class SkillsLayout extends React.Component<{}, {}> {
@@ -28,7 +29,7 @@ export class SkillsLayout extends React.Component<{}, {}> {
                         <ArrowNavigation {...leftArrowProps} />
                     </div>
                     <div className='it-container'>
-                        <h2>Tecnologías</h2>
+                        <h2><I18nText text='sections.tech'/></h2>
                         <div className='it-skills-container'>
                             {
                                 its.map((skill, index) => (

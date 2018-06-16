@@ -3,16 +3,28 @@
         "en": "Inglés",
         "es": "Español"
     },
+    "sections": {
+        "home": "Inicio",
+        "tech": "Tecnologías",
+        "social": "Contacto",
+        "cv": "Currículum"
+    },
     "home": {
         "profile": "Desarrollador web",
         "about": "Desarrollador web desde el 2014. Perfil frontend aunque también he trabajado como backend. He trabajado con distintas tecnologías, entre ellas Javascript, Typescript, Angular, React, Java y Python."
     },
     "cv": {
+        "title": {
+            "contact": "Contacto",
+            "experience": "Experiencia",
+            "education": "Formación"
+        },
         "label": {
             "name": "Nombre",
             "profile": "Perfil",
             "mail": "Email",
-            "phone": "Teléfono"
+            "phone": "Teléfono",
+            "download": "Descargar CV"
         },
         "data": {
             "profile": "Desarrollador web",

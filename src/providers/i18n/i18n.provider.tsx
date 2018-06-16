@@ -10,10 +10,12 @@ export class I18nProvider extends React.Component {
         super(props);
 
         this.state = {
+            lang: 'es',
             data: es,
-            setLanguage: (language: string) => {
+            setLanguage: (lang: string) => {
                 this.setState(state => ({
-                    data: this.getLanguageJSON(language)
+                    lang,
+                    data: this.getLanguageJSON(lang)
                 }));
             }
         };

@@ -4,9 +4,9 @@ import './index.scss';
 
 export class HomeLayout extends React.Component<{}, {}> {
     render() {
-        const rightArrowProps: ArrowNavigationProps = { link: { href: '#skills', direction: 'right', title: 'Tecnologias' } };
-        const leftArrowProps: ArrowNavigationProps = { link: { href: '#contact', direction: 'left', title: 'Contacto' } };
-        const downArrowProps: ArrowNavigationProps = { link: { href: '#cv', direction: 'down', title: 'Curriculum' } };
+        const rightArrowProps: ArrowNavigationProps = { link: { href: '#skills', direction: 'right', title: 'sections.tech' } };
+        const leftArrowProps: ArrowNavigationProps = { link: { href: '#contact', direction: 'left', title: 'sections.social' } };
+        const downArrowProps: ArrowNavigationProps = { link: { href: '#cv', direction: 'down', title: 'sections.cv' } };
 
         return (
             <section id='home' className='layout'>

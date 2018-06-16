@@ -5,7 +5,7 @@ import './arrow-navigation.scss';
 export const ArrowNavigationComponent = ({ link }: ArrowNavigationProps) => (link.href && link.direction) ?
     (
         <div className='dan-arrow-container'>
-            <a className={`arrow arrow-${link.direction}`} href={link.href} title={link.title}></a>
+            <a className={`arrow arrow-${link.direction}`} href={link.href}></a>
         </div>
     ) : null;
 

@@ -3,16 +3,28 @@
         "en": "English",
         "es": "Spanish"
     },
+    "sections": {
+        "home": "Home",
+        "tech": "Skills",
+        "social": "Social",
+        "cv": "Curriculum"
+    },
     "home": {
         "profile": "Web developer",
         "about": "Web developer since 2014. Frontend developer however I've work with backend technologies too. I've been working with Javascript, Typescript, Angular, React, Java and Python."
     },
     "cv": {
+        "title": {
+            "contact": "Contact",
+            "experience": "Experience",
+            "education": "Education"
+        },
         "label": {
             "name": "Name",
             "profile": "Profile",
             "mail": "Email",
-            "phone": "Phone"
+            "phone": "Phone",
+            "download": "CV download"
         },
         "data": {
             "profile": "Web developer",

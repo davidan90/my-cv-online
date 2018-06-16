@@ -4,7 +4,7 @@ import './index.scss';
 
 export class CvLayout extends React.Component<{}, {}> {
     render() {
-        const upArrowProps: ArrowNavigationProps = { link: { href: '#home', direction: 'up', title: 'Inicio' } };
+        const upArrowProps: ArrowNavigationProps = { link: { href: '#home', direction: 'up', title: 'sections.home' } };
 
         return (
             <section id='cv' className='layout'>

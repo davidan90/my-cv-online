@@ -17,7 +17,7 @@ export class Cv extends React.Component<{ children?: any }, {}> {
     render() {
         const sections: Array<CvSectionProps> = [
             {
-                title: 'Contacto',
+                title: 'cv.title.contact',
                 children: (
                     <div className='cv-section-container cv-contact'>
                         <div className='cv-contact-item'>
@@ -30,7 +30,7 @@ export class Cv extends React.Component<{ children?: any }, {}> {
                 )
             },
             {
-                title: 'Formación',
+                title: 'cv.title.education',
                 children: (
                     <div className='cv-section-container cv-studies'>
                         <div className='cv-studies-item'>
@@ -47,7 +47,7 @@ export class Cv extends React.Component<{ children?: any }, {}> {
                 )
             },
             {
-                title: 'Experiencía',
+                title: 'cv.title.experience',
                 children: (
                     <div className='cv-section-container cv-experience'>
                         <div className='cv-experience-item'>
@@ -82,7 +82,7 @@ export class Cv extends React.Component<{ children?: any }, {}> {
 
         return (
             <div className='it-container'>
-                <h2>Currículum</h2>
+                <h2><I18nText text='sections.cv'/></h2>
                 {this.renderSections(sections)}
                 <CvDownload/>
             </div>
